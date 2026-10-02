@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Habit Todo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <h1>کارهای من</h1>
+
+        <section class="add-todo">
+
+            <input
+                type="text"
+                id="todoInput"
+                placeholder="مثلاً مطالعه ۳۰ دقیقه"
+            >
+
+            <input
+                type="number"
+                id="daysInput"
+                placeholder="تعداد روز"
+                min="1"
+            >
+
+            <button id="addTodoBtn">
+                اضافه کردن
+            </button>
+
+        </section>
+
+        <section id="todoList">
+            <!-- Todo ها بعداً توسط JavaScript اینجا قرار می‌گیرند -->
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
